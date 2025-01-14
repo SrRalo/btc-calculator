@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Jublicación en Bitcoin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<header><h1>Calculadora de Jublicación en Bitcoin</h1></header>
+
+<div id="body-center">
+    <p>Ingrese los datos para calcular la cantidad mínima en Bitcoin que necesita para retirarse.</p><br>
+    <p>(Los cáculos están hechos tomando en cuenta un 7% de inflación anual y un rendimiento de BTC 200% promedio anual)</p><br>
+
+    <form id="btcForm">
+      <label for="retirosIniciales">Retiros iniciales (USD):</label>
+      <input type="number" id="retirosIniciales" placeholder="Ingrese el monto (ej. 14400)" required>
+
+      <label for="anios">Años de retiros:</label>
+      <input type="number" id="anios" placeholder="Ingrese los años (ej. 50)" required><br>
+
+      <button type="button" onclick="calcularBTC()">Calcular</button>
+    </form>
+
+    <div id="result"></div>
+    <div id="tablaResultados"></div>
+
+    <script src="script.js"></script>
+    <p><em><strong>Advertencia</strong>: Los cálculos proporcionados por esta aplicación son estimaciones basadas en suposiciones y 
+      datos actuales. No garantizamos que las cifras reflejen resultados reales debido a la volatilidad del mercado de 
+      criptomonedas y otros factores económicos. Utilice esta información como una guía general, no como asesoramiento financiero.</em></p>
+</div>
+
+</html>
